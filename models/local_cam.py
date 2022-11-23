@@ -72,7 +72,7 @@ class LocalCamNet(nn.Module):
         super(LocalCamNet, self).__init__()
         num_classes = 200
         # ----main branch----
-        basenet = getattr(import_module('torchvision.models'), "resnet50")
+        basenet = getattr(import_module('torchvision.models'), "resnet152")
         basenet = basenet(pretrained=True)
 
         self.conv4 = nn.Sequential(*list(basenet.children())[:-3])

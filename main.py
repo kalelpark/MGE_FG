@@ -63,7 +63,7 @@ if __name__ == "__main__":
     best_loss = 1e5
 
     wandb.init( name = args.dataset + "_ResNet50",
-                project = "Mixture of Granularity-Specific Experts for Fine-Grained_1", reinit = True)
+                project = "Mixture of Granularity-Specific Experts for Fine-Grained_152", reinit = True)
 
     for epoch in range(args.epochs):
         lr = optimizer.param_groups[0]['lr']

@@ -15,20 +15,14 @@ $sh experiment.sh
 Default inference. in `python main.py --seed 0 --dataset cub --imgsize 512 --model mgecnn --epochs 100 --batchsize 10 --gpu_ids 6,7`.
 
 ## Results
-<img src = "png/record_valid.png"/>
+<img src = "png/record_valid.png"  style="width:500px;"/>
+<img src = "png/record_valid1.png" style="width:450px;"/>
 
 
 ## Datasets
 We upload the datasets used in the paper with our train/val/test splits [here](http://www.vision.caltech.edu/datasets/). We do not impose additional restrictions to the original dataset licenses, the sources of the data are listed in the paper appendix.
 
 You could load the datasets with the following commands:
-
-``` bash
-conda activate tdl
-cd $Researh
-wget "https://www.dropbox.com/s/o53umyg6mn3zhxy/data.tar.gz?dl=1" -O rtdl_data.tar.gz
-tar -zvf rtdl_data.tar.gz
-```
 
 
 **File Structure**
